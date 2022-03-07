@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --sm: 0.5rem;
+  --md: 1rem;
+  --lg: 2rem;
+  --xl: 3rem;
+  --dark: #303030;
+  --white: rgb(206, 206, 206);
+  --green: #86bd24;
+  --shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+html {
+  scroll-behavior: smooth;
+  moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+}
+body {
+  background-color: #303030;
+  color: rgb(206, 206, 206);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  display: grid;
+  gap: var(--lg);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "main"
+    "footer";
+  padding: var(--sm);
+}
+h1 {
+  color: var(--green);
+}
+/* nav */
+nav {
+  grid-area: "nav";
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+nav div {
+  margin: auto auto;
+  text-transform: capitalize;
+}
+/* main */
+main {
+  margin: var(--xl);
+  grid-area: "main";
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--lg);
+}
+/* form solid */
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 600px;
+  gap: var(--lg);
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+  padding: var(--lg);
+}
+
+.form-info,
+.form-hour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sm);
+}
+.form-date {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--lg);
+}
+/* inputs */
+input {
+  padding: var(--md) 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--white);
+  outline: none;
+  color: var(--white);
+  width: 100%;
+}
+input::placeholder {
+  color: var(--white);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+input:focus::placeholder {
+  transform: translateY(-100%);
+  color: var(--green);
+}
+input:focus {
+  border-bottom: 2px solid var(--green);
+}
+input[type="date"] {
+  text-transform: uppercase;
+}
+/* dynamic */
+.dynamic {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 600px;
+  gap: var(--lg);
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+  padding: var(--lg);
+}
+/* ▲ ▼ */
+h2 span {
+  float: right;
+  cursor: pointer;
+  transition: 0.5s;
+}
+h2 span:hover {
+  color: var(--green);
+}
+
+/* footer */
+footer {
+  grid-area: "footer";
+}

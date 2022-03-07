@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div><h1>autorisation d'absence</h1></div>
+        <div>
+          <img
+            src="./Nouvelle_image_bitmap-removebg-preview-modified-removebg-preview.png"
+          />
+        </div>
+      </nav>
+      <main>
+        <!-- en dur -->
+        <div class="solid">
+          <form class="form" action="">
+            <div class="form-info">
+              <input type="text" placeholder="nom" />
+              <input type="text" placeholder="prénom" />
+              <input type="text" placeholder="formation suivie" />
+            </div>
+
+            <div class="form-date">
+              <div>
+                <input type="date" />
+                <div class="form-hour">
+                  <input type="number" placeholder="De telle heure" />
+                  <input type="number" placeholder="à telle heure" />
+                </div>
+              </div>
+              <div>
+                <div class="form-hour">
+                  <input type="text" placeholder="du" />
+                  <input type="text" placeholder="au" />
+                </div>
+                <input type="text" placeholder="Soit tant de jours complets" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- dynamique -->
+        <div id="dynamic" class="dynamic">
+          <h2>Pour le motif suivant: <span id="angle">▼</span></h2>
+
+          <div id="datas">
+            <h3 id="data-title"></h3>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <span
+          >Agence nationale pour la formation professionnelle des adultes
+        </span>
+      </footer>
+    </div>
+    <script src="./script/data.js"></script>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
