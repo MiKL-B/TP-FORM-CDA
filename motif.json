@@ -31,7 +31,7 @@
             "name": "Code 06",
             "title": "Absence Légale",
             "options": [
-                { "op_id": "06_01", "op_label" : "Maissane ou adoption (3  jours)" },
+                { "op_id": "06_01", "op_label" :  "Naissance ou adoption (3  jours)" },
                 { "op_id" : "06_02", "op_label" : "Mariage (4 jours)" },
                 { "op_id" : "06_03", "op_label" : "Mariage d’un enfant (1 jour)" },
                 { "op_id" : "06_04", "op_label" : "Décès du conjoint ou du partenaire lié par un pactecivil de solidarité ou d’un enfant (2 jours)" },

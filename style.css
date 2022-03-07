@@ -38,7 +38,7 @@ body {
     "footer";
   padding: var(--sm);
 }
-h1 {
+h1,h3 {
   color: var(--green);
 }
 /* nav */
@@ -125,7 +125,23 @@ h2 span {
 h2 span:hover {
   color: var(--green);
 }
+.code{
+  border:2px solid var(--green);
+  padding:var(--sm) var(--sm);
+  margin:var(--sm)0;
+}
+.options{
+  padding:var(--md);
+ 
+}
+ul{
+  list-style-type:none ;
+}
+li{
+  display:grid;
+  grid-template-columns: 0.2fr 1fr;
 
+}
 /* footer */
 footer {
   grid-area: "footer";
