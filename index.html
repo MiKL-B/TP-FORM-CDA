@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- nav -->
       <nav>
         <div><h1>autorisation d'absence</h1></div>
         <div>
@@ -17,6 +18,7 @@
           />
         </div>
       </nav>
+      <!-- main -->
       <main>
         <!-- en dur -->
         <div class="solid">
@@ -24,7 +26,13 @@
             <div class="form-info">
               <input type="text" placeholder="nom" />
               <input type="text" placeholder="prénom" />
-              <input type="text" placeholder="formation suivie" />
+
+              <select name="" id="">
+                <option value="" selected disabled>Formation suivie</option>
+                <option value="">CDA</option>
+                <option value="">DWWM</option>
+                <option value="">TSSR</option>
+              </select>
             </div>
 
             <div class="form-date">
@@ -48,19 +56,20 @@
         <!-- dynamique -->
         <div id="dynamic" class="dynamic">
           <h2>Pour le motif suivant: <span id="angle">▼</span></h2>
-      
+
           <div>
-       
             <div id="datas">
               <h3 id="data-title"></h3>
             </div>
           </div>
         </div>
       </main>
+      <!-- footer -->
       <footer>
         <span
           >Agence nationale pour la formation professionnelle des adultes
         </span>
+        <a href="/pagesuite.html"><button>générer</button></a>
       </footer>
     </div>
     <script src="./script/data.js"></script>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav -->
+      <nav>
+        <div><h1>autorisation d'absence</h1></div>
+        <div>
+          <img
+            src="./Nouvelle_image_bitmap-removebg-preview-modified-removebg-preview.png"
+          />
+        </div>
+      </nav>
+      <!-- main -->
+      <main>
+        <div class="container-suite">
+          <!-- form part -->
+          <div class="form-part">
+            <!-- en dur -->
+            <div class="solid">
+              <form class="form" action="">
+                <div class="form-info">
+                  <input type="text" placeholder="nom" />
+                  <input type="text" placeholder="prénom" />
+
+                  <select name="" id="">
+                    <option value="" selected disabled>Formation suivie</option>
+                    <option value="">CDA</option>
+                    <option value="">DWWM</option>
+                    <option value="">TSSR</option>
+                  </select>
+                </div>
+
+                <div class="form-date">
+                  <div>
+                    <input type="date" />
+                    <div class="form-hour">
+                      <input type="number" placeholder="De telle heure" />
+                      <input type="number" placeholder="à telle heure" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="form-hour">
+                      <input type="text" placeholder="du" />
+                      <input type="text" placeholder="au" />
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Soit tant de jours complets"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- dynamique -->
+            <div id="dynamic" class="dynamic">
+              <h2>Pour le motif suivant: <span id="angle">▼</span></h2>
+
+              <div>
+                <div id="datas">
+                  <h3 id="data-title"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- signature -->
+          <div class="signature">
+            <div class="signature-bloc">
+              <span>cachet et signature de l'entreprise ou de </span>
+              <input type="text" placeholder="entreprise/nom" />
+            </div>
+            <div>
+              <span
+                >merci d'appoer votre cachet pour justifier de<br />
+                l'absence de la formation de M </span
+              ><input type="text" placeholder="nom du stagiaire" />
+            </div>
+            <div class="signature-stagiaire">
+              <span>date et signature du stagiaire</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer>
+        <span
+          >Agence nationale pour la formation professionnelle des adultes
+        </span>
+        <button id="print-pdf">Imprimer</button>
+        <a href="/index.html"><button>Accueil</button></a>
+      </footer>
+    </div>
+    <script src="./script/data.js"></script>
+    <script src="./script/app.js"></script>
+  </body>
+</html>

@@ -85,7 +85,8 @@ main {
   gap: var(--lg);
 }
 /* inputs */
-input {
+input,
+select {
   padding: var(--md) 0;
   background: transparent;
   border: none;
@@ -109,6 +110,16 @@ input:focus {
 input[type="date"] {
   text-transform: uppercase;
 }
+select {
+  text-transform: uppercase;
+}
+select:focus {
+  color: var(--green);
+}
+select option {
+  background: var(--dark);
+}
+
 /* dynamic */
 .dynamic {
   display: grid;
@@ -139,6 +150,9 @@ h2 span:hover {
   margin: var(--sm) 0;
   display: grid;
   grid-template-columns: 0.2fr 1fr;
+}
+.span-elem {
+  color: var(--green);
 }
 label {
   display: none;
@@ -177,4 +191,69 @@ li {
 /* footer */
 footer {
   grid-area: "footer";
+  display: flex;
+  justify-content: space-around;
+}
+a button {
+  color: var(--green);
+  border: 2px solid var(--green);
+  padding: var(--md) var(--lg);
+  background: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+a button:hover {
+  background: var(--green);
+  color: var(--dark);
+  cursor: pointer;
+}
+#print-pdf {
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: var(--md) var(--lg);
+  background: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#print-pdf:hover {
+  background: var(--white);
+  color: var(--dark);
+}
+/* PAGE SUITE */
+.container-suite {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--md);
+}
+
+.signature {
+  display: grid;
+  width: 600px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.4fr 1fr;
+  box-shadow: var(--shadow);
+  padding: var(--lg);
+}
+.signature div {
+  text-align: center;
+  text-transform: uppercase;
+  padding: var(--sm);
+}
+.signature-bloc {
+  display: grid;
+  grid-template-rows: repeat(2, 0.2fr);
+}
+.signature-bloc input {
+  margin: 0 auto;
+}
+.signature input {
+  width: 400px;
+}
+.signature span {
+  color: var(--green);
+}
+.signature-stagiaire {
+  border: 2px solid var(--white);
 }

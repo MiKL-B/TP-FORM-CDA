@@ -12,3 +12,12 @@ angle.addEventListener("click", () => {
     document.getElementById("datas").style.display = "none";
   }
 });
+
+//print
+
+const printMyPdf = document.getElementById("print-pdf");
+console.log(printMyPdf);
+
+printMyPdf.addEventListener("click", () => {
+  window.print();
+});
