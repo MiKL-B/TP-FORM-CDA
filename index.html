@@ -20,14 +20,23 @@
       </nav>
       <!-- main -->
       <main>
-        <!-- en dur -->
-        <div class="solid">
-          <form class="form" action="">
+        <div>
+          <form class="form" id="myForm" method="GET" action="pagesuite.html">
             <div class="form-info">
-              <input type="text" placeholder="nom" />
-              <input type="text" placeholder="prénom" />
+              <input
+                id="username"
+                type="text"
+                name="username"
+                placeholder="nom"
+              />
+              <input
+                type="text"
+                placeholder="prénom"
+                name="firstname"
+                id="firstname"
+              />
 
-              <select name="" id="">
+              <select name="ee" id="">
                 <option value="" selected disabled>Formation suivie</option>
                 <option value="">CDA</option>
                 <option value="">DWWM</option>
@@ -51,17 +60,20 @@
                 <input type="text" placeholder="Soit tant de jours complets" />
               </div>
             </div>
-          </form>
-        </div>
-        <!-- dynamique -->
-        <div id="dynamic" class="dynamic">
-          <h2>Pour le motif suivant: <span id="angle">▼</span></h2>
-
-          <div>
-            <div id="datas">
-              <h3 id="data-title"></h3>
+            <!-- dynamic -->
+            <div id="dynamic" class="dynamic">
+              <h2>Pour le motif suivant: <span id="angle">▼</span></h2>
+              <div>
+                <div id="datas">
+                  <h3 id="data-title"></h3>
+                </div>
+              </div>
             </div>
-          </div>
+            <!-- a supprimer -->
+            <a style="color: white" href="/pagesuite.html">suite</a>
+
+            <button id="button-submit" type="submit">générer</button>
+          </form>
         </div>
       </main>
       <!-- footer -->
@@ -69,10 +81,11 @@
         <span
           >Agence nationale pour la formation professionnelle des adultes
         </span>
-        <a href="/pagesuite.html"><button>générer</button></a>
       </footer>
     </div>
-    <script src="./script/data.js"></script>
-    <script src="./script/app.js"></script>
+
+    <!-- <script src="./script/data.js"></script> -->
+    <script src="./script/form.js"></script>
+    <script src="./script/toggle.js"></script>
   </body>
 </html>

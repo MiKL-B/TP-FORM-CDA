@@ -120,14 +120,16 @@ select option {
   background: var(--dark);
 }
 
+input.wrong-value::placeholder {
+  color: tomato;
+}
 /* dynamic */
 .dynamic {
   display: grid;
   grid-template-columns: 1fr;
-  width: 600px;
+  width: 100%;
   gap: var(--lg);
   margin: 0 auto;
-  box-shadow: var(--shadow);
   padding: var(--lg);
 }
 /* ▲ ▼ */
@@ -194,7 +196,7 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-a button {
+button {
   color: var(--green);
   border: 2px solid var(--green);
   padding: var(--md) var(--lg);
@@ -202,24 +204,12 @@ a button {
   transition: 0.5s;
   text-transform: uppercase;
 }
-a button:hover {
+button:hover {
   background: var(--green);
   color: var(--dark);
   cursor: pointer;
 }
-#print-pdf {
-  color: var(--white);
-  border: 2px solid var(--white);
-  padding: var(--md) var(--lg);
-  background: transparent;
-  transition: 0.5s;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-#print-pdf:hover {
-  background: var(--white);
-  color: var(--dark);
-}
+
 /* PAGE SUITE */
 .container-suite {
   display: grid;
@@ -257,4 +247,17 @@ a button:hover {
 }
 .signature-stagiaire {
   border: 2px solid var(--white);
+}
+#print-pdf {
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: var(--md) var(--lg);
+  background: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#print-pdf:hover {
+  background: var(--white);
+  color: var(--dark);
 }
