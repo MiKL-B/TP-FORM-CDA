@@ -13,9 +13,10 @@
       <nav>
         <div><h1>autorisation d'absence</h1></div>
         <div>
-          <img
-            src="./Nouvelle_image_bitmap-removebg-preview-modified-removebg-preview.png"
-          />
+          <a href="/">
+            <img
+              src="./Nouvelle_image_bitmap-removebg-preview-modified-removebg-preview.png"
+          /></a>
         </div>
       </nav>
       <!-- main -->
@@ -28,35 +29,51 @@
               <form class="form" action="">
                 <div class="form-info">
                   <input type="text" placeholder="nom" id="recupNom" disabled />
-                  <input type="text" placeholder="prénom" />
+                  <input
+                    type="text"
+                    placeholder="prénom"
+                    id="recupPrenom"
+                    disabled
+                  />
 
-                  <select name="" id="">
-                    <option value="" selected disabled>Formation suivie</option>
-                    <option value="">CDA</option>
-                    <option value="">DWWM</option>
-                    <option value="">TSSR</option>
-                  </select>
+                  <input type="select" disabled />
                 </div>
 
                 <div class="form-date">
                   <div>
-                    <input type="date" />
+                    <p>LE</p>
+                    <input type="date" disabled />
                     <div class="form-hour">
-                      <input type="number" placeholder="De telle heure" />
-                      <input type="number" placeholder="à telle heure" />
+                      <input
+                        type="number"
+                        placeholder="De telle heure"
+                        disabled
+                      />
+                      <input
+                        type="number"
+                        placeholder="à telle heure"
+                        disabled
+                      />
                     </div>
                   </div>
+                  <p>OU</p>
                   <div>
                     <div class="form-hour">
-                      <input type="text" placeholder="du" />
-                      <input type="text" placeholder="au" />
+                      <input type="text" placeholder="du" disabled />
+                      <input type="text" placeholder="au" disabled />
                     </div>
                     <input
                       type="text"
                       placeholder="Soit tant de jours complets"
+                      disabled
                     />
                   </div>
-                  <h2>Pour le motif suivant:</h2>
+                  <h2>
+                    Pour le motif suivant:
+                    <span id="choice"
+                      ><input type="text" disabled name="choice"
+                    /></span>
+                  </h2>
                 </div>
               </form>
             </div>
@@ -66,13 +83,13 @@
           <div class="signature">
             <div class="signature-bloc">
               <span>cachet et signature de l'entreprise ou de </span>
-              <input type="text" placeholder="entreprise/nom" />
+              <input type="text" placeholder="entreprise/nom" disabled />
             </div>
             <div>
               <span
                 >merci d'appoer votre cachet pour justifier de<br />
                 l'absence de la formation de M </span
-              ><input type="text" placeholder="nom du stagiaire" />
+              ><input type="text" placeholder="nom du stagiaire" disabled />
             </div>
             <div class="signature-stagiaire">
               <span>date et signature du stagiaire</span>

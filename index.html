@@ -13,9 +13,10 @@
       <nav>
         <div><h1>autorisation d'absence</h1></div>
         <div>
-          <img
-            src="./Nouvelle_image_bitmap-removebg-preview-modified-removebg-preview.png"
-          />
+          <a href="/">
+            <img
+              src="./Nouvelle_image_bitmap-removebg-preview-modified-removebg-preview.png"
+          /></a>
         </div>
       </nav>
       <!-- main -->
@@ -36,28 +37,50 @@
                 id="firstname"
               />
 
-              <select name="ee" id="">
+              <select name="select" id="">
                 <option value="" selected disabled>Formation suivie</option>
-                <option value="">CDA</option>
-                <option value="">DWWM</option>
-                <option value="">TSSR</option>
+                <option value="CDA">CDA</option>
+                <option value="DWWM">DWWM</option>
+                <option value="TSSR">TSSR</option>
               </select>
             </div>
 
             <div class="form-date">
               <div>
-                <input type="date" />
+                <p>LE</p>
+                <input type="date" name="date" />
                 <div class="form-hour">
-                  <input type="number" placeholder="De telle heure" />
-                  <input type="number" placeholder="à telle heure" />
+                  <input
+                    type="number"
+                    placeholder="De telle heure"
+                    name="heureDebut"
+                  />
+                  <input
+                    type="number"
+                    placeholder="à telle heure"
+                    name="heureFin"
+                  />
                 </div>
               </div>
+              <p>OU</p>
               <div>
                 <div class="form-hour">
-                  <input type="text" placeholder="du" />
-                  <input type="text" placeholder="au" />
+                  <input
+                    type="number"
+                    placeholder="de tel jour"
+                    name="dateDebut"
+                  />
+                  <input
+                    type="number"
+                    placeholder="à tel jour"
+                    name="dateFin"
+                  />
                 </div>
-                <input type="text" placeholder="Soit tant de jours complets" />
+                <input
+                  type="number"
+                  placeholder="Soit tant de jours complets"
+                  name="nombreJour"
+                />
               </div>
             </div>
             <!-- dynamic -->
@@ -69,8 +92,6 @@
                 </div>
               </div>
             </div>
-            <!-- a supprimer -->
-            <a style="color: white" href="/pagesuite.html">suite</a>
 
             <button id="button-submit" type="submit">générer</button>
           </form>
