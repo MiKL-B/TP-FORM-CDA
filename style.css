@@ -56,11 +56,11 @@ nav div {
 }
 /* main */
 main {
-  margin: var(--xl);
+  margin: var(--md);
   grid-area: "main";
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--lg);
+  gap: var(--md);
 }
 /* form solid */
 .form {
@@ -235,6 +235,7 @@ a button:hover {
   grid-template-rows: 0.4fr 0.4fr 1fr;
   box-shadow: var(--shadow);
   padding: var(--lg);
+  height: 350px;
 }
 .signature div {
   text-align: center;
